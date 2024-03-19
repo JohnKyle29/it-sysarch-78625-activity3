@@ -1,0 +1,76 @@
+header {
+  padding: 0px;
+  
+}
+.logo{
+  float: center;
+}
+
+h1 {
+  
+  text-align:left;
+}
+
+
+.pokedex {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* App.css */
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.pokemon {
+  width: 200px;
+  margin: 10px;
+  margin-left:10px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  
+}
+.stats-left{
+  float:left;
+  text-align:justify;
+
+}
+.stats-right{
+  float:right;
+  text-align: justify;
+}
+.pokemonType {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.pokemonType > div {
+  padding: 10px;
+  margin:10px;
+  width: 100px;
+  border-radius: 30px;
+}
+
+.pokemonType.single-type > div {
+  border: 3px solid green; /* Border for single type */
+}
+
+.pokemonType.double-type > div {
+  border: 3px solid green; /* Border for each type in double type */
+  margin-right: 5px; /* Add some space between types */
+}
+
+.pokemon img {
+  max-width: 100%;
+  transition: transform 0.3 ease;
+}
+.pokemon img:hover{
+  transition: scale(1.1);
+}
